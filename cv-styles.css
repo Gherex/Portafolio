@@ -1,0 +1,231 @@
+* {
+    font-family: 'Microsoft Sans Serif', 'Calibri';
+    color: #1B3B61;
+    font-size: 1.6vw;
+}
+
+#cv-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    max-width: 70vw; /* Limita el ancho del contenedor al 70% del viewport */
+    background-color: #FFFFFF; /* Color de fondo para simular una hoja */
+    box-shadow: 0 0 10px #000000; /* Agrega una sombra al contenedor */
+    border: solid 1px black;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    height: 100%; /* Ajustar la altura del contenedor al 100% del viewport */
+    background-color: #a7a7a7; /* Color de fondo para simular una hoja */
+}
+
+.cv-col-izq {
+    flex: 1;
+    padding: 5%;
+    margin: 0;
+}
+
+#profile-photo { /*foto de perfil*/
+    width: 95%;
+    border-radius: 30%;
+    margin: 10% 0;
+    padding: 0;
+}
+
+.cv-col-izq__titulo { /*PERFIL y CONTACTO*/
+    padding: 20% 0% 10% 0%; /*top right bottom left*/
+    font-size: 1.9vw;
+    letter-spacing: 0.8vw;
+}
+
+.cv-col-izq__texto {
+    text-align: justify; /*ajusta el texto para que se alinee tanto a la derecha como a la izquierda*/
+    line-height: 1.7;
+}
+
+.lista-contacto {
+    margin-bottom: 9% ; /*separacion entre elementos de la lista*/
+    font-size: 1.2vw;
+}
+
+img { /*iconos de la lista de contacto*/ 
+    width: 7%; /*tamaño del iconito*/
+    height: auto;
+    margin: 0% 2% 0 8%; /*top right bottom left*/
+}
+
+.subrayado {
+    position: relative;
+}
+  
+.subrayado::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 13%;
+    width: 30%;
+    height: 3px;
+    background-color: #1B3B61;
+}
+  
+.subrayado::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 18%;
+    width: 30%;
+    height: 3px;
+    background-color: #1B3B61;
+}
+  
+
+/*------------------------------------- COLUMNA DERECHA -----------------------------------------------*/
+
+.cv-col-der {
+    flex: 1.8;
+    background-image: linear-gradient(to right, #a7a7ea, #dbe6f8, #C4FBFA);
+    padding: 5% 0 2% 4%; /*top right bottom left*/
+}
+
+.cv-col-der__titulo { /*HABILIDADES, CONOCIMIENTOS, EDUCACION y EXPERIENCIA*/
+    padding: 8% 0% 5% 0%; /*top right bottom left*/
+    font-size: 1.9vw;
+    letter-spacing: 0.8vw;
+}
+
+.cv-col-der__texto-li {
+    margin-left: 20%;
+}
+
+#cv-col-der__presentacion {
+    text-align: center;
+}
+
+#cv-col-der__presentacion-apellido {
+    font-family: 'Calibri';
+    font-size: 6vw;
+    padding: 0 0 0 0; /*top right bottom left*/
+    margin-bottom: 0;
+}
+
+#cv-col-der__presentacion-nombre {
+    font-family: 'Calibri';
+    font-size: 4vw;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+#cv-col-der__presentacion-profesion {
+    font-size: 1.5vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+img[alt="Flecha"] {
+    width: 3%;
+}
+
+li li {
+    list-style-type: disc; /* Punto negro relleno */
+    margin-bottom: 1%;
+}
+
+.subtitulo {
+    margin: 5% 0 5% 0; /*top right bottom left*/
+}
+
+.letra-menor {
+    font-size: 1.2vw;
+    white-space: nowrap;
+    margin-left: 12%;
+    margin-top: 1%;
+}
+
+.item-flecha {
+    margin-bottom: 3%;
+}
+
+.ajustar-texto {
+    margin-right: 3%;
+}
+
+@media (max-width: 600px) {
+
+    * {
+        font-size: 4vw;
+    }
+    #cv-container {
+        margin: 4%;
+        flex-direction: column;
+        max-width: 100vw;
+        background-image: linear-gradient(to right, #a7a7ea, #dbe6f8, #C4FBFA);
+    }
+    .cv-col-der{
+        order: 1;
+        margin-top: 100%;
+    }
+    .cv-col-izq{
+        order: 2;
+    }
+    .lista-contacto {
+        font-size: 4.2vw;
+        margin-bottom: 2%;
+    }
+    .cv-col-izq__titulo, .cv-col-der__titulo {
+        font-size: 4.7vw;
+        margin-bottom: 2%;
+    }
+    .cv-col-izq__titulo {
+        padding-top: 0;
+        padding-bottom: 4%;
+    }
+    #profile-photo { /*foto de perfil*/
+        width: 90%;
+        margin-left: 4%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }    
+    img { /*iconos de la lista de contacto*/ 
+        width: 7%; /*tamaño del iconito*/
+    }
+    .letra-menor {
+        margin-left: 15%;
+        font-size: 3.8vw;
+        white-space: inherit;
+    }
+    #cv-col-der__presentacion-apellido {
+        font-size: 18vw;
+        margin-top: 0;
+    }
+    #cv-col-der__presentacion-nombre {
+        font-size: 14vw;
+    }
+    #cv-col-der__presentacion-profesion {
+        font-size: 4.6vw;
+        margin-bottom: 2%;
+    }
+    .subrayado::after{
+        bottom: 13%;
+    }
+    .subrayado::before{
+        bottom: 20%;
+    }
+    .cv-col-izq__titulo.subrayado::after{
+        bottom: 13%;
+    }
+    .cv-col-izq__titulo.subrayado::before{
+        bottom: 26%;
+    }
+    .cv-col-izq__texto{
+        margin-bottom: 6%;
+    }
+    .ajustar-texto{
+        text-align: justify;
+    }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio-styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="images/iconos/gherex_green_code.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi:wght@500&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e61f4cd1ac.js" crossorigin="anonymous"></script>
+    <title>German Lagger</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container logo-nav-container">
+        <div class="logo-botones-container">
+          <div class="logo">
+            <img id="logo-gherex" src="images/gherex.png" alt="Gherex logo">
+            <span>GERMÁN</span>
+          </div>
+          <div class="switch-container">
+            <div class="fondo-claro-oscuro"></div>
+            <label class="switch">
+              <input type="checkbox" id="btn-claro-oscuro">
+              <span class="slider"></span>
+            </label>
+            <div class="fondo-es-en"></div>
+            <label class="switch btn2" >
+              <input type="checkbox" id="btn-es-en">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre_mi">Sobre mí</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container scroll-section" id="inicio">
+        <img src="images/profile-photo.png" alt="Germán Lagger">
+        <h1>Germán Lagger</h1>
+        <p>Desarrollador front-end, estudiante de Ingeniería en Informática</p>
+        <div class="row">
+          <a href="https://www.linkedin.com/in/germanlagger/" target="_blank"><i
+              class="fa-brands fa-linkedin icono"></i></a>
+          <a href="https://www.github.com/gherex" target="_blank"><i class="fa-brands fa-square-github icono"></i></a>
+        </div>
+      </div>
+      <div class="container scroll-section" id="sobre_mi">
+        <h2>Sobre mi</h2>
+        <p class="scroll-section"><b>Hola, soy Germán Lagger. </b>Desarrollador front-end y estudiante de Ingeniería en Informática en la
+          Universidad del Litoral.</p>
+        <div class="tabla-habilidades">
+          <div class="tabla scroll-section">
+            <h3>Habilidades técnicas:</h3>
+            <ul>
+              <li><img class="icono-flecha" src="images/iconos/flecha.png" alt="Icono flecha">MS Office</li>
+              <li><img class="icono-flecha" src="images/iconos/flecha.png" alt="Icono flecha">HTML & CSS</li>
+              <li><img class="icono-flecha" src="images/iconos/flecha.png" alt="Icono flecha">JavaScript + React</li>
+              <li><img class="icono-flecha" src="images/iconos/flecha.png" alt="Icono flecha">Java</li>
+              <li><img class="icono-flecha" src="images/iconos/flecha.png" alt="Icono flecha">C++</li>
+            </ul>
+          </div>
+          <div class="tabla scroll-section">
+            <h3>Habilidades profesionales:</h3>
+            <ul>
+              <li><img class="icono-flecha" src="images/iconos/flecha.png" alt="Icono flecha">Comunicación</li>
+              <li><img class="icono-flecha" src="images/iconos/flecha.png" alt="Icono flecha">Trabajo en equipo</li>
+              <li><img class="icono-flecha" src="images/iconos/flecha.png" alt="Icono flecha">Creativo</li>
+              <li><img class="icono-flecha" src="images/iconos/flecha.png" alt="Icono flecha">Meticuloso</li>
+              <li><img class="icono-flecha" src="images/iconos/flecha.png" alt="Icono flecha">Dedicado</li>
+            </ul>
+          </div>
+        </div>
+        <div id="btns-sobre-mi">
+          <a href="profile.html" target="_blank"><button id="ver-cv scroll-section">Ver CV<i
+                class="fa-solid fa-arrow-up-right-dots"></i></i></button></a>
+          <button id="download-cv">Descargar CV<i class="fa-solid fa-download scroll-section"></i></button>
+        </div>
+      </div>
+      <div class="container scroll-section" id="portafolio">
+        <h2 class="item1 scroll-section">Mis últimos proyectos</h2>
+        <div class="portafolio-item item2 scroll-section">
+          <a href="https://recetasdegherex.netlify.app/" target="_blank"><img class="imagen-portafolio"
+              src="images/recetas.jpg" alt="Pág. web de recetas"></a>
+          <p>Página web estática dedicada a recetas tradicionales argentinas, diseño sencillo y visualmente agradable.</p>
+          <div class="lenguajes">
+            <img class="icono" src="/images/iconos/ico-html.png" alt="Icono HTML">
+            <img class="icono" src="/images/iconos/ico-css.png" alt="Icono CSS">
+          </div>
+          <div class="links">
+            <a href="https://recetasdegherex.netlify.app/" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square icono"></i></a>
+            <a href="https://github.com/Gherex/PaginaWeb_Recetas" target="_blank"><i
+                class="fa-brands fa-github icono"></i></a>
+          </div>
+        </div>
+        <div class="portafolio-item item3 scroll-section">
+          <a href="https://calculadoradegherex.netlify.app/" target="_blank"><img class="imagen-portafolio"
+              src="images/calculadora.jpg" alt="Calculadora"></a>
+          <p>Calculadora web interactiva, interfaz intuitiva que permite realizar operaciones matemáticas de manera rápida.</p>
+          <div class="lenguajes">
+            <img class="icono" src="/images/iconos/ico-html.png" alt="Icono HTML">
+            <img class="icono" src="/images/iconos/ico-css.png" alt="Icono CSS">
+            <img class="icono" src="/images/iconos/ico-js.png" alt="Icono JavaScript">
+          </div>
+          <div class="links">
+            <a href="https://calculadoradegherex.netlify.app/" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square icono"></i></a>
+            <a href="https://github.com/Gherex/Calculadora" target="_blank"><i class="fa-brands fa-github icono"></i></a>
+          </div>
+        </div>
+        <div class="portafolio-item item4 scroll-section">
+          <a href="https://anotadordegherex.netlify.app/" target="_blank"><img class="imagen-portafolio"
+              src="images/anotador.jpg" alt="Anotador"></a>
+          <p>Anotador web interactivo que permite a los usuarios tomar notas y organizar su información de manera eficiente.</p>
+          <div class="lenguajes">
+            <img class="icono" src="/images/iconos/ico-html.png" alt="Icono HTML">
+            <img class="icono" src="/images/iconos/ico-css.png" alt="Icono CSS">
+            <img class="icono" src="/images/iconos/ico-js.png" alt="Icono JavaScript">
+          </div>
+          <div class="links">
+            <a href="https://anotadordegherex.netlify.app/" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square icono"></i></a>
+            <a href="https://github.com/Gherex/Anotador" target="_blank"><i class="fa-brands fa-github icono"></i></a>
+          </div>
+        </div>
+        <div class="portafolio-item item5 scroll-section">
+          <a href="https://proyectodereactdegherex.netlify.app/" target="_blank"><img class="imagen-portafolio"
+              src="images/proyecto-react.jpg" alt="Proyecto react"></a>
+          <p>Futuro proyecto aplicando mis conocimientos del framework React.</p>
+          <div class="lenguajes">
+            <img class="icono" src="/images/iconos/ico-html.png" alt="Icono HTML">
+            <img class="icono" src="/images/iconos/ico-css.png" alt="Icono CSS">
+            <img class="icono" src="/images/iconos/ico-js.png" alt="Icono JavaScript">
+            <img class="icono" src="/images/iconos/ico-react.png" alt="Icono React">
+          </div>
+          <div class="links">
+            <a href="https://proyectodereactdegherex.netlify.app/" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square icono"></i></a>
+            <a href="https://github.com/Gherex/ProyectoReact" target="_blank"><i
+                class="fa-brands fa-github icono"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container scroll-section" id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          <i class="fa-solid fa-envelope"></i><b>Email:</b> germilagger@hotmail.com <br>
+          <i class="fa-solid fa-location-dot"></i><b> Ubicación:</b> Santa Fe, Argentina.<br>
+          <i class="fa-solid fa-phone"></i><b>Teléfono:</b> +5493425285858 <br>
+        </p>
+        <form class="input-contacto" id="contact-form">
+          <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+          <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" required>
+          <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+          <textarea id="mensaje" name="mensaje" rows="5" cols="25" placeholder="Mensaje" required></textarea>
+          <button type="submit" id="form_btn">Enviar mensaje<i class="fa-regular fa-paper-plane"></i></button>
+        </form>
+      </div>
+      <a href="#inicio" id="btn-flecha-arriba"><i class="fa-solid fa-arrow-up"></i></a>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a href="https://www.linkedin.com/in/germanlagger/" target="_blank"><i
+            class="fa-brands fa-linkedin icono"></i></a>
+        <a href="https://www.github.com/gherex" target="_blank"><i class="fa-brands fa-square-github icono"></i></a>
+        <h3>Germán Portafolio 2023</h3>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

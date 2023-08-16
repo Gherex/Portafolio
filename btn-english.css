@@ -1,3 +1,27 @@
+:root {
+  /*variables*/
+  --azul-oscuro: #021d2c;
+  --azul: #084362;
+  --azul-claro: #65a3c5;
+  --amarillo: #fafdb8;
+  --blanco: #e3f1f7;
+  --negro-real: #000000;
+  --blanco-real: #ffffff;
+  --imagen-fondo-ClaroOscuro: url('images/btn_day.png');
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode {
+  --azul-oscuro: #ffffff;
+  --azul: #5196bc;
+  --azul-claro: #021d2c;
+  --amarillo: #394b59;
+  --blanco: #1f2936;
+  --negro-real: #ffffff;
+  --blanco-real: #000000;
+  --imagen-fondo-ClaroOscuro: url('images/btn_night.png');
+}
+
 /*-------------------------------BOTONES DARK-MODE Y LENGUAJE (SWITCH BUTTON)-------------------------------*/
 
 .switch-container {
@@ -14,7 +38,7 @@
     width: 3rem;
     height: 1.6rem;
     border-radius: 1.2rem;
-    background-image: url(images/btn_day.png);
+    background-image: var(--imagen-fondo-ClaroOscuro);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -80,7 +104,7 @@
   }
   
   input:checked+.slider {
-    background-color: #2196F3;
+    background-color: #2195f300;
   }
   
   input:checked+.slider:before {

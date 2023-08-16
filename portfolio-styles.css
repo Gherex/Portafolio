@@ -29,6 +29,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.5em;
   user-select: none;
+  letter-spacing: 0.03rem;
 }
 
 /*--------------------------------------HEADER--------------------------------------*/
@@ -709,7 +710,7 @@ p {
     user-select: text;
     line-height: 2.5rem;
     padding-left: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
   }
 
@@ -742,7 +743,7 @@ p {
   }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 387px) {
   .menu-icon {
     display: block;
     padding: 0.3rem 0.3rem;
@@ -755,10 +756,10 @@ p {
   }
     .logo img {
       width: 2.7rem;
-      margin-right: 0.5em;
+      margin-right: 0.4em;
     }
   .switch-container {
-    margin: 0 0.2rem;
+    margin: 0 0.1rem;
     padding: 0 0.1rem;
   }
   #inicio img {
@@ -766,18 +767,74 @@ p {
   }
 }
 
-@media screen and (max-width: 352px) {
+@media screen and (max-width: 376px) {
+  .menu-icon {
+    display: block;
+    padding: 0.3rem 0.3rem;
+    font-size: 1.4rem;
+  }
+  .logo {
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    padding: 0 0.1rem;
+  }
+    .logo img {
+      width: 2.6rem;
+      margin-right: 0.4em;
+    }
+}
+
+@media screen and (max-width: 362px) {
+  header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body > header > div > div > div.switch-container {
+    padding: 0;
+  }
+  body > header > div > div > div.logo {
+    padding-left: 0;
+  }
+  #logo-gherex {
+    margin-right: 0.4rem;
+  }
+  .logo {
+    padding: 0.9rem;
+  }
+  .menu-icon {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  body > header > div > div > div.logo {
+    font-size: 1.4rem;
+    line-height: normal;
+    letter-spacing: 0.6rem;
+  }
+  .logo {
+    padding: 1rem;
+  }
   .logo-botones-container {
     flex-direction: column;
-    margin: 0.5rem 1rem 1rem 0.5rem;
+    margin: 0.1rem;
   }
   .switch-container {
-    padding: 0.8rem 0 0.1rem 0;
+    padding: 0.9rem 0 0.1rem 0;
   }
   h1 {
     text-align: center;
   }
   .menu-icon {
     padding: 1rem;
+    font-size: 2rem;
+  }
+  #logo-gherex {
+    margin-right: 0.8rem;
+    height: 3rem;
+    width: 3rem;
   }
 }

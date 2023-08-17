@@ -102,6 +102,10 @@
   .en:before { /*el interruptor*/
     left: 22px;
   }
+
+  .btn2 .slider:before {
+    left: 1.25rem;
+  }
   
   input:checked+.slider {
     background-color: #2195f300;

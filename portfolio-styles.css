@@ -226,8 +226,9 @@ p {
   width: 40%;
   margin: 1rem;
   border: solid 2px var(--azul-oscuro);
-  border-radius: 45%;
+  border-radius: 10rem;
   box-shadow: 0 0 5px #000000, 0 0 10px #000266, 0 0 15px #fff;
+  background-color: #695acd6a;
 }
 
 #inicio h1 {
